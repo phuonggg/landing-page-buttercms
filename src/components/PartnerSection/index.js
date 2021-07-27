@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./PartnerSection.scss";
+import styles from "./index.module.scss";
 
 const PartnerSection = () => {
   return (

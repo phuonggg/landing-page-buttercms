@@ -1,12 +1,12 @@
 import React from "react";
 
-import Navbar from "../../components/Navbar/Navbar";
-import HeroSection from "../../components/HeroSection/HeroSection";
-import PartnerSection from "../../components/PartnerSection/PartnerSection";
-import Content from "../../components/Content/Content";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar";
+import HeroSection from "../../components/HeroSection";
+import PartnerSection from "../../components/PartnerSection";
+import Content from "../../components/Content";
+import Footer from "../../components/Footer";
 
-import "./Home.scss";
+import styles from "./index.module.scss";
 
 import { useState, useEffect } from "react";
 import Butter from "buttercms";

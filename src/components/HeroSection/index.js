@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./HeroSection.scss";
+import styles from "./index.module.scss";
 
 const HeroSection = () => {
   return (
