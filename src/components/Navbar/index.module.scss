@@ -1,5 +1,30 @@
 .navbar {
   width: 100%;
-  height: 150px;
+  height: 50px;
   border: 1px solid green;
+  margin: 0;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navItem {
+  margin: 0 1rem;
+
+  img {
+    width: 8.5rem;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
