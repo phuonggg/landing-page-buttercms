@@ -1,0 +1,18 @@
+.content {
+  width: 100%;
+  //   height: 50px;
+  border: 1px solid green;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0 6rem;
+}
+
+.footerItem {
+  margin: 0 1rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

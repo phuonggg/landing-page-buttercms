@@ -49,9 +49,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <HeroSection heading={heading} />
+      <HeroSection heading={heading} key={heading} />
       <PartnerSection />
-      <Content paragraphs={paragraphs} />
+      <Content paragraphs={paragraphs} key={paragraphs?.fields?.short_text} />
       <Footer />
     </>
   );
