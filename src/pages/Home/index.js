@@ -21,16 +21,14 @@ const Home = () => {
   };
 
   const fetchData = () => {
+    // Fetch data from butterCms
     butter.page
       .retrieve("*", "home-landing", params)
       .then(function (resp) {
-        console.log("resp:", resp);
         const Heading = resp?.data?.data?.fields?.sections[0]?.fields?.headline;
         setHeading(Heading);
-        console.log("heading:", Heading);
         const Paragraphs = resp?.data?.data?.fields?.paragraphs;
         setParagraphs(Paragraphs);
-        console.log("paragraph", Paragraphs);
       })
       .catch(function (resp) {
         console.log(resp);
