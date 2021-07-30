@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import HeroSection from "../../components/HeroSection";
 import PartnerSection from "../../components/PartnerSection";
-import Content from "../../components/Content";
 import Footer from "../../components/Footer";
 
 import styles from "./index.module.scss";
@@ -46,12 +45,19 @@ const Home = () => {
     fetchData();
   }, [heading, paragraphs]);
 
+  const content = paragraphs?.map((paragraph, index) => (
+    <div key={index}>
+      <div className={styles.shortText}>{paragraph.fields.short_text}</div>
+      <div className={styles.longText}>{paragraph.fields.long_text}</div>
+    </div>
+  ));
+
   return (
     <>
       <Navbar />
-      <HeroSection heading={heading} key={heading} />
+      <HeroSection heading={heading} />
       <PartnerSection />
-      <Content paragraphs={paragraphs} key={paragraphs?.fields?.short_text} />
+      <div className={styles.content}>{content}</div>;
       <Footer />
     </>
   );

@@ -1,0 +1,26 @@
+.partnerSection {
+  border-bottom: 1px solid #707070;
+  margin-top: 1.5rem;
+  padding: 0 5rem;
+}
+
+.message {
+  font-size: 0.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partnerItem {
+  margin-right: 3rem;
+  padding: 2.5rem 0;
+  img {
+    height: 2.5rem;
+  }
+}

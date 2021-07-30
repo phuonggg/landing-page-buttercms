@@ -8,7 +8,9 @@ const Footer = () => {
       <div className={styles.footerItem}>Terms</div>
       <div className={styles.footerItem}>Privacy policy</div>
       <div className={styles.footerItem}>Contact</div>
-      <div className={styles.footerItem}>hello@xplenty.com</div>
+      <div className={styles.footerItem}>
+        <a href="mailto:hello@xplenty.com">hello@xplenty.com</a>
+      </div>
     </Col>
   );
 };
