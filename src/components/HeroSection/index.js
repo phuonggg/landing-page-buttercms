@@ -7,26 +7,14 @@ const HeroSection = ({ heading }) => {
   return (
     <div onMouseover className={styles.heroSection}>
       <div className={styles.container}>
-        <div className={styles.imgFrame}>
-          <img
-            className={styles.blueImg}
-            // onMouseOver={(e) => (e.currentTarget.src = Purple)}
-            // onMouseOut={(e) => (e.currentTarget.src = Blue)}
-            src={Blue}
-            alt=""
-          />
-          <img
-            className={styles.purpleImg}
-            // onMouseOver={(e) => (e.currentTarget.src = Purple)}
-            // onMouseOut={(e) => (e.currentTarget.src = Blue)}
-            src={Purple}
-            alt=""
-          />
-        </div>
+        <img className={styles.blueImg} src={Blue} alt="" />
+        <img className={styles.purpleImg} src={Purple} alt="" />
         <div className={styles.heroContent}>
           <div className={styles.heroText}>{heading}</div>
-          <div className={styles.heroButton}>SECURE MY DATA</div>
-          <div className={styles.heroButton}>TAKE A CHANCE</div>
+          <div className={styles.buttonsContainer}>
+            <div className={styles.heroButtonLeft}>SECURE MY DATA</div>
+            <div className={styles.heroButtonRight}>TAKE A CHANCE</div>
+          </div>
         </div>
       </div>
     </div>
