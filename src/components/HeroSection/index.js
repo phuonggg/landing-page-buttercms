@@ -8,7 +8,7 @@ const HeroSection = ({ heading }) => {
     <div onMouseover className={styles.heroSection}>
       <div className={styles.container}>
         <img className={styles.blueImg} src={Blue} alt="" />
-        <div className={styles.purpleImg} />
+        <img className={styles.purpleImg} src={Purple} alt="" />
         <div className={styles.heroContent}>
           <div className={styles.heroText}>{heading}</div>
           <div className={styles.buttonsContainer}>
@@ -17,7 +17,6 @@ const HeroSection = ({ heading }) => {
           </div>
         </div>
       </div>
-      <div className={styles.box}></div>
     </div>
   );
 };
